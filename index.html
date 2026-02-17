@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Special Topics: 3D Design & Physical Computing Winter 2026</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {
+  font-family: "Poppins", sans-serif
+  }
+body {
+  font-size:16px;
+  }
+h1 { 
+  font-size:30px;
+  }
+h2 {
+  font-size:25px;
+  }
+  h3 {
+  font-size:18px;
+  }
+img {
+  width: 100%;
+  height: 100%;
+}
+.grid {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+}
+.w3-half img{
+  margin-bottom:-6px;
+  margin-top:16px;
+  opacity:0.8;
+  cursor:pointer
+  } */
+.w3-half img:hover{
+  opacity:1
+  }
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:200px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-display-topleft" style="display:none;font-size:22px"></a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>IXD<br>DESN 34665<br> Winter 2026</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#Home" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#Module1" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Module 1</a> 
+    <a href="#Activity1" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Activity 1</a> 
+    <a href="#Activity2" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Activity 2</a> 
+    <a href="#Workshop1" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Workshop 1</a> 
+    <a href="#Workshop2" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Workshop 2</a> 
+    <a href="#ProjectConcept" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Project 1</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens
+<header class="w3-container w3-top w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Menu</span>
+</header> -->
+
+<!-- 
+  if you want to link your image to a video use one of the following alt links as an example:
+
+  alt="test1Lorem ipsum dolor sit amet, consectetur adipiscing elit test1Lorem ipsum dolor sit amet, consectetur adipiscing elit <a href='https://www.youtube.com/embed/tgbNymZ7vqY' target='_blank'><p>Project Video Link</p></a>"> 
+  alt="test2Lorem ipsum dolor sit amet, consectetur adipiscing elit <div class='container'><iframe class='responsive-iframe' src='https://www.youtube.com/embed/tgbNymZ7vqY'></iframe></div>">
+
+-->
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:220px;margin-right:20px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="default">
+    <h1 class="w3-jumbo"  style="color: #eb8817"; id="Home"><b>Special Topics Module 1</b></h1>
+    <h1 class="w3-xxxlarge" style="color: #e475ae;"><b>Research & Activity Documentation</b></h1>
+
+      <h1 class="w3-xxxlarge" style="color: #eb8817;"><b>Gloria Alejandra Flores</b></h1>
+  </div>
+  <!-- Boilerplate -->
+<div id="Module1" class="w3-container" style="margin-top:20px">
+    <h1 class="w3-xxxlarge" style="color: #eb8817;"><b>P1: Ideating 🍅🥕🫛</b></h1>
+    <hr style="width:50px; border:5px solid #e475ae" class="w3-round">
+    <h2>Module 1</h2>
+    <h3>Focused on research exploration and developing a proposal for a project alongside my teammate Gabriela Gonzalez.
+    </h3>
+    <hr style="width:50px;border:5px solid #e475ae" class="w3-round">
+  </div>
+  
+  <!-- Project 1 Photo grid (modal) -->
+  <div id="Activity1" >
+    <h2>Activity 1</h2>
+    <p>Explored software of interest by searching up tutorials and examples of projects already built
+    </p>
+    <div class="grid">
+      <img src="images/Activity1/a_1.1.png" style="width:100%" onclick="onClick(this)" alt="Since I didn’t know anything about VR and Unity, i conducted a small research on the pathway to build a VR game using Unity to know the approach i would have to take if i took the VR gaming path.<div class='container'><iframe class='responsive-iframe' src='https://www.youtube.com/embed/oRnvRJqgaGQ?si=OtpnYrLqneuJbYvP'></iframe></div>">
+      <img src="images/Activity1/a_1.2.png" style="width:100%" onclick="onClick(this)" alt="Since second year, I've been willing to polish my skills on 3d modeling, but this time using blender as a software so i decided to search on a couple of beginner friendly tutorials to grasp a little bit on how it works like.<div class='container'><iframe class='responsive-iframe' src='https://www.youtube.com/embed/O6HQhs-gk50?si=zLx6ugQGh2F7Z1iX'></iframe></div>">
+      <img src="images/Activity1/a_1.3.png" style="width:100%" onclick="onClick(this)" alt="I did some research on micro-controllers paired with ProtoPie and found this interesnting video: https://www.youtube.com/watch?v=2fABz6dXKaY">
+  </div>
+  
+  <hr style="width:90%;border:5px solid #e475ae;margin-top:80px" class="w3-round"></hr>
+
+  <div id="Activity2" class="w3-row-padding">
+    <h2>Activity 2</h2>
+    <p>Our results from our brainstorming session blending our personal objectives.
+    </p>
+    <div class="grid">
+      <img src="images/Activity2/a_2.1.png" style="width:100%" onclick="onClick(this)" alt="Wearable anxiety tool: a bracelet/smart watch that features a meditation guide, ai dialogue that distracts/relaxes you and that can detect anxiety through your biometrics">
+      <img src="images/Activity2/a_2.2.png" style="width:100%" onclick="onClick(this)" alt="Nutrition Virtual Pet:3D printed pet toy with image recognition that teaches kids to eat healthy and keeps track of their meal records">
+      <img src="images/Activity2/a_2.3.png" style="width:100%" onclick="onClick(this)" alt="Medicine Studying tool: user can explore 3D modeled organs by turning them around to see its anatomy and get information about specific sections">
+    </div>
+  </div>
+
+  <hr style="width:90%;border:5px solid #e475ae;margin-top:80px" class="w3-round"></hr>
+
+  <div id="Workshop1" class="w3-row-padding">
+    <h2>Workshop 1</h2>
+    <p>Testing out the VR headsets, for the first time ever!
+    </p>
+    <div class="grid">
+      <img src="images/Workshop1/w_1.png" style="width:100%" onclick="onClick(this)" alt="Testing the VR headsets. We had such a strong impression we considered changing pathways.">
+    </div>
+
+
+  <hr style="width:90%;border:5px solid #e475ae;margin-top:80px" class="w3-round"></hr>
+
+  <!-- Boilerplate -->
+  <div id="Project1" class="w3-container" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color: #eb8817;"><b>Project 1 🍅🥕🫛</b></h1>
+    <hr style="width:50px;border:5px solid #e475ae" class="w3-round">
+    <h2>Project Concept</h2>
+    <p>The purpose of this project is to help children aged 4 to 11 build healthy eating habits during one of the most important periods for forming lifelong food choices, according to research. The toy is a veggie pet with a built-in image recognition sensor that looks at the child’s plate during meals and gives short, spoken feedback such as “Great job, you have something from all five food groups,” “You must add some vegetables,” or a simple fun fact about one of the foods. To keep children interested without using screens or turning meals into playtime, the toy offers a simple reward system, children collect badges for healthy choices like eating vegetables every day at lunch, and parents can unlock new characters that “join” the meal when they place their phone nearby; all meal information is saved in a parent-only app, and the monster sometimes asks easy questions like “How does your food taste?” to help the child stay present and focused on eating.
+    </p>
+    <img src="images/final/pc.png" style="width:100%" onclick="onClick(this)" alt="3D printed pet toy with an image recognition sensor">
+  </div>
+
+  <div id="EarlyResearch" class="w3-row-padding">
+    <h2>Testing Action Research</h2>
+    <p>A glance of our 1st cycle on Action Research -> Planned, researched, brainstormed, evaluated.
+    </p>
+    <div class="grid">
+      <img src="images/EarlyResearch/r_1.png" style="width:100%" onclick="onClick(this)" alt="Collaborative Planning & Action: We decided together what learning goals we wanted to reach by the end of the term. Based on those goals, we started building our project. We planned clear research steps to collect enough information so we could brainstorm ideas and polish them.">
+      <img src="images/EarlyResearch/r_2.png" style="width:100%" onclick="onClick(this)" alt="Observation and Data Gathering: We did research on how reward systems can help children change their habits. We also looked into image recognition and weight sensors.">
+      <img src="images/EarlyResearch/r_3.png" style="width:100%" onclick="onClick(this)" alt="Evaluation:  obtained feedback from our peers to evaluate our final idea and reflected on what to implement and change.">
+    </div>
+  </div>
+ 
+  <hr style="width:90%;border:5px solid #e475ae;margin-top:80px" class="w3-round"></hr>
+
+  <div id="Reflection" class="w3-row-padding">
+    <h2>Research Reflection</h2>
+    <p>In this first deliverable, one big challenge was understanding how to use the action research cycle properly. The planning and acting parts went well, we set goals, brainstormed, and researched. But the observing and reflecting steps happened too late, mostly in the last two weeks. Because of that, we could not polish the interactions as much as we wanted. If we had done the full cycle sooner, we would have spotted problems earlier and pitch a more solid  idea to our peers.
+
+The main takeaway is that repeating the action research cycle often, and starting it early, makes a huge difference. Doing it just once at the end meant we missed chances to keep improving. Now I see why doing observation and reflection quickly is so important: it keeps curiosity alive, builds knowledge fast, and helps the project grow stronger. For the next deliverable, I want to do at least two full cycles, plan and act on small parts, observe how they work with quick tests, reflect right away, and adjust. This should help us define the user interactions much better and end up with a polished prototype.
+    </p>
+  </div>
+
+  <hr style="width:90%;border:5px solid #e475ae;margin-top:80px" class="w3-round"></hr>
+
+  <div id="NextSteps" class="w3-row-padding">
+    <h2>Next Steps</h2>
+    <p>After the workshop with MacTechs, where we tried AR and VR in class, Gabriela and I liked VR a lot. It felt exciting and fun to think about new ideas with VR. We even started thinking up some small ideas for a VR project.
+
+Still, I think our current nutritional app idea is good and worth keeping. 
+
+I need to discuss this further with Gabriela as soon as possible. We must choose whether to stay with the nutritional app or switch to a VR project for the next part.
+    </p>
+    </div>
+
+  <hr style="width:90%;border:5px solid #e475ae;margin-top:80px" class="w3-round"></hr>
+  
+   <!-- Modal for full size images on click-->
+   <div id="modal01" class="w3-modal w3-grey" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-center w3-transparent" style ="padding:20px">
+      <img id="img01" class="w3-image">
+      <h2 id="caption"></h2>
+
+      <!-- <div id="urLink"></div> -->
+      <!-- <a id="urLink" class="container"><iframe class="responsive-iframe"></iframe></a> -->
+    <!-- </div> -->
+  </div>
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+
+  // var captionUrl = document.getElementById("urLink");
+  // captionUrl.innerHTML = element.url;
+
+  //document.getElementById("urLink").src = element.url;
+}
+</script>
+
+</body>
+</html>
